@@ -21,7 +21,7 @@ void next_level(int u, int d) {
 	if (d > Depth) Depth = d;
 	//更新当前深度的宽度
 	width[d]++;
-	//事实更新最大宽度
+	//实时更新最大宽度
 	if (width[d] > Width) Width = width[d];
 
 	for (int i = 0; i < vertex[u].size(); i++) {
